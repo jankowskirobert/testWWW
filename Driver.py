@@ -21,6 +21,10 @@ password.send_keys("Robert24")
 messageBefore = d.find_element_by_class_name("form-message")
 print messageBefore.text
 
+
+print "HOHOHO"
+
+
 buttonOK = d.find_element_by_name("submit_form")
 buttonOK.click()
 
