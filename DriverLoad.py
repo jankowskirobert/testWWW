@@ -13,7 +13,7 @@ class DriverLoad:
 
     def __init__(self, param):
         self.driver = webdriver.Remote(
-   command_executor='http://172.21.2.128:4445/wd/hub',
+   command_executor='http://127.0.0.1:4445/wd/hub',
    desired_capabilities=DesiredCapabilities.FIREFOX)
         self.driver.get(param)
         
