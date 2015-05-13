@@ -6,12 +6,17 @@ Created on May 12, 2015
 import time
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
+from selenium.webdriver.common.desired_capabilities import DesiredCapabilities
 
 class DriverLoad:
     'Return driver'
 
     def __init__(self, param):
-        self.driver = webdriver.Firefox()
+        self.driver = webdriver.Remote(
+   command_executor='http://localhost:4444/wd/hub',
+   desired_capabilities={'browserName': 'htmlunit',
+                         'version': '2',
+                        'javascriptEnabled': True})
         self.driver.get(param)
         
     def importDriver(self):
