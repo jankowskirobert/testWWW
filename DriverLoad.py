@@ -14,9 +14,7 @@ class DriverLoad:
     def __init__(self, param):
         self.driver = webdriver.Remote(
    command_executor='http://localhost:4444/wd/hub',
-   desired_capabilities={'browserName': 'htmlunit',
-                         'version': '2',
-                        'javascriptEnabled': True})
+   desired_capabilities=DesiredCapabilities.FIREFOX)
         self.driver.get(param)
         
     def importDriver(self):
