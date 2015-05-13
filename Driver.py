@@ -18,6 +18,11 @@ login.send_keys("robert@abastra.com")
 password = d.find_element_by_id("passwd")
 password.send_keys("Robert24")
 
+
+print "XXX"
+print "asdaSD"
+print "XXX"
+print "asdaSD"
 print "XXX"
 print "asdaSD"
 messageBefore = d.find_element_by_class_name("form-message")
