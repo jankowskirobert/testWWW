@@ -27,7 +27,8 @@ print "HOHOHO"
 
 buttonOK = d.find_element_by_name("submit_form")
 buttonOK.click()
-
+d.close()
+d.quit()
 # messageAfter = d.find_element_by_class_name("form-message")
 # print messageAfter.text
 # 
