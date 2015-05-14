@@ -12,4 +12,4 @@ def fooReturnSix():
 
 #
 
-print os.environ[""]
+# print os.environ[""]
