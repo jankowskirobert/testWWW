@@ -9,6 +9,6 @@ from Executor import fooReturnFive, fooReturnSix
 
 
 def test_five():
-    assert fooReturnFive == 5
+    assert fooReturnFive() == 5.0
 def test_six():
-    assert fooReturnSix == 6
+    assert fooReturnSix() == 6.0
