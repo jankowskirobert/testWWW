@@ -12,11 +12,8 @@ class DriverLoad:
     'Return driver'
 
     def __init__(self, param):
-         self.driver = webdriver.Remote(desired_capabilities={
-            "browserName": "firefox",
-            "platform": "LINUX",
-        })
-         self.driver.get(param)
+        self.driver = webdriver.Remote(command_executor="http://localhost:4444/wd/hub",desired_capabilities={ "browserName": "firefox", "platform": "LINUX",})
+        self.driver.get(param)
 
 #         Remote(
 #    command_executor='http://127.0.0.1:4445/wd/hub',

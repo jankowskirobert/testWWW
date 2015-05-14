@@ -3,7 +3,7 @@ Created on May 13, 2015
 
 @author: tester
 '''
-import subprocess
+import os
 
 def fooReturnFive():
     return 5
@@ -12,4 +12,4 @@ def fooReturnSix():
 
 #
 
-subprocess.call("echo","\"HEHE\"")
+print os.environ[""]
