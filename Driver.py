@@ -28,13 +28,13 @@ print "HOHOHO"
 buttonOK = d.find_element_by_name("submit_form")
 buttonOK.click()
 
-messageAfter = d.find_element_by_class_name("form-message")
-print messageAfter.text
-
-if ( messageAfter.text in "Login or password is incorrect." ): 
-    d.close()
-    d.quit()
-else:
-    assert "https://e-stempelki.pl/adminpanel/static/home/submit" in d.current_url()
-    d.close()
-    d.quit()
+# messageAfter = d.find_element_by_class_name("form-message")
+# print messageAfter.text
+# 
+# if ( messageAfter.text in "Login or password is incorrect." ): 
+#     d.close()
+#     d.quit()
+# else:
+#     assert "https://e-stempelki.pl/adminpanel/static/home/submit" in d.current_url()
+#     d.close()
+#     d.quit()
